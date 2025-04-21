@@ -35,7 +35,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="w-full py-12">
+    <section id="faq-section" className="w-full py-12">
       <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
       
       <div className="max-w-3xl mx-auto">
@@ -57,3 +57,4 @@ const FAQ = () => {
 };
 
 export default FAQ;
+
