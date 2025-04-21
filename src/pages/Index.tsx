@@ -1,25 +1,25 @@
 
 import Hero from "@/components/Hero";
-import FeedbackDemoCard from "@/components/FeedbackDemoCard";
-import RecentFeedbacks from "@/components/RecentFeedbacks";
-import PremiumUpsell from "@/components/PremiumUpsell";
+import Features from "@/components/Features";
+import HowItWorks from "@/components/HowItWorks";
+import AiFeedback from "@/components/AiFeedback";
+import FAQ from "@/components/FAQ";
+import CallToAction from "@/components/CallToAction";
+import Footer from "@/components/Footer";
 import MobileNavbar from "@/components/MobileNavbar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-[#f7f6fa] flex flex-col items-center justify-start font-inter relative">
-      <div className="w-full max-w-xl mx-auto px-2 pt-8 pb-24">
+      <div className="w-full max-w-4xl mx-auto px-4 pt-8 pb-24">
         <Hero />
-        <div className="mt-8">
-          <FeedbackDemoCard />
-        </div>
-        <div className="mt-8">
-          <RecentFeedbacks />
-        </div>
-        <div className="mt-8">
-          <PremiumUpsell />
-        </div>
+        <Features />
+        <HowItWorks />
+        <AiFeedback />
+        <CallToAction />
+        <FAQ />
       </div>
+      <Footer />
       <MobileNavbar />
     </div>
   );

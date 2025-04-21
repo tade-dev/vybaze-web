@@ -1,10 +1,12 @@
 
-import { Home, FileMusic, Settings } from "lucide-react";
+import { Home, Upload, Headphones, DollarSign, HelpCircle } from "lucide-react";
 
 const nav = [
   { name: "Home", icon: Home, href: "#", active: true },
-  { name: "Feedbacks", icon: FileMusic, href: "#" },
-  { name: "Settings", icon: Settings, href: "#" },
+  { name: "Upload", icon: Upload, href: "#" },
+  { name: "Feedback", icon: Headphones, href: "#" },
+  { name: "Monetize", icon: DollarSign, href: "#" },
+  { name: "Help", icon: HelpCircle, href: "#" },
 ];
 
 const MobileNavbar = () => (
@@ -19,7 +21,7 @@ const MobileNavbar = () => (
             : "text-gray-500 hover:text-pink-400"
         }`}
       >
-        <item.icon size={26} className="mb-0.5" />
+        <item.icon size={24} className="mb-0.5" />
         {item.name}
       </a>
     ))}
