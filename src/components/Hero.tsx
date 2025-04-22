@@ -1,6 +1,8 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { Download } from "lucide-react";
+
+const APP_STORE_URL = "https://apps.apple.com/app"; // Replace with actual App Store link
 
 const Hero = () => (
   <section className="w-full flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
@@ -16,11 +18,15 @@ const Hero = () => (
         Sell your best work directly to fans with zero hassle.
       </p>
       <div className="flex flex-wrap gap-4">
-        <Button size="lg" className="bg-pink-500 hover:bg-pink-600">
-          Get Started Free
+        <Button 
+          size="lg" 
+          className="bg-pink-500 hover:bg-pink-600"
+          onClick={() => window.open(APP_STORE_URL, '_blank')}
+        >
+          <Download size={18} className="mr-2" />
+          Download Now
         </Button>
         <Button size="lg" variant="outline" className="gap-2">
-          <ArrowDown size={18} />
           Learn More
         </Button>
       </div>
