@@ -39,7 +39,7 @@ const HowItWorks = () => {
   return (
     <section className="w-full py-14 rounded-3xl my-12 bg-white/90 shadow-sm relative">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 id="how-it-works" className="text-3xl md:text-4xl font-bold text-center mb-4">
           How Vybaze Works
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
