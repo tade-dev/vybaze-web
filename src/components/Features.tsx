@@ -47,7 +47,7 @@ const Features = () => {
             <p className="text-gray-600">{feature.description}</p>
             
             {feature.comingSoon && (
-              <div className="absolute top-4 right-4 bg-vivid-purple text-white px-3 py-1 rounded-full text-xs font-semibold shadow-sm">
+              <div className="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-sm">
                 Coming Soon
               </div>
             )}
