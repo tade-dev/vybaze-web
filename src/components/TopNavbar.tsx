@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const navItems = [
@@ -22,7 +23,7 @@ const TopNavbar = () => {
       <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/7d986829-356e-4c98-99d2-74dd8303b054.png" 
+            src="/lovable-uploads/49d79be3-bd1c-4b37-9eb8-e8321cd3f431.png" 
             alt="Vybaze Logo" 
             className="h-8 w-auto"
           />
@@ -56,3 +57,4 @@ const TopNavbar = () => {
 };
 
 export default TopNavbar;
+
