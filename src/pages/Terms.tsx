@@ -1,8 +1,11 @@
 
+import TopNavbar from "@/components/TopNavbar";
+
 const Terms = () => {
   return (
-    <div className="min-h-screen bg-[#f7f6fa] py-24">
-      <div className="max-w-4xl mx-auto px-4">
+    <div className="min-h-screen bg-[#f7f6fa]">
+      <TopNavbar />
+      <div className="pt-24 max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
         
         <div className="prose prose-gray max-w-none">
