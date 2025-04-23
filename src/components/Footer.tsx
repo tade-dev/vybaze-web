@@ -1,5 +1,5 @@
-
 import { MessageSquare } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -40,8 +40,8 @@ const Footer = () => {
               <h4 className="font-semibold mb-4 text-gray-900">Company</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">About</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Privacy</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Terms</a></li>
+                <li><Link to="/privacy" className="text-gray-600 hover:text-pink-500 text-sm">Privacy</Link></li>
+                <li><Link to="/terms" className="text-gray-600 hover:text-pink-500 text-sm">Terms</Link></li>
               </ul>
             </div>
           </div>
