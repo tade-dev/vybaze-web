@@ -22,9 +22,7 @@ const Footer = () => {
               <h4 className="font-semibold mb-4 text-gray-900">Product</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Features</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Pricing</a></li>
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Testimonials</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">AI Technology</a></li>
               </ul>
             </div>
             
@@ -42,7 +40,6 @@ const Footer = () => {
               <h4 className="font-semibold mb-4 text-gray-900">Company</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">About</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Careers</a></li>
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Privacy</a></li>
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Terms</a></li>
               </ul>
