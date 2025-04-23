@@ -1,8 +1,6 @@
-
 import { Upload, FileMusic, Headphones, DollarSign, Users } from "lucide-react";
 
-// REPLACE THIS path with your uploaded app mockup image in /public when available!
-const mockupSrc = "/mockup.png";
+const mockupSrc = "/lovable-uploads/2a900c8b-500b-47ac-8ab8-e5cb16a4fb2b.png";
 
 const steps = [
   {
