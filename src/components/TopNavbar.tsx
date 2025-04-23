@@ -1,8 +1,9 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 const navItems = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/" },  // Change href to root path
   { name: "FAQ", href: "#faq" },
 ];
 
@@ -31,15 +32,24 @@ const TopNavbar = () => {
         <ul className="hidden sm:flex space-x-8 text-gray-700 font-medium">
           {navItems.map((item) => (
             <li key={item.name}>
-              <a
-                href={item.href}
-                onClick={
-                  item.name === "FAQ" ? handleFaqClick : undefined
-                }
-                className="hover:text-pink-500 hover:underline focus:text-pink-600 focus:underline transition-colors duration-200 px-2 py-1 rounded"
-              >
-                {item.name}
-              </a>
+              {item.name === "Home" ? (
+                <Link
+                  to={item.href}
+                  className="hover:text-pink-500 hover:underline focus:text-pink-600 focus:underline transition-colors duration-200 px-2 py-1 rounded"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  href={item.href}
+                  onClick={
+                    item.name === "FAQ" ? handleFaqClick : undefined
+                  }
+                  className="hover:text-pink-500 hover:underline focus:text-pink-600 focus:underline transition-colors duration-200 px-2 py-1 rounded"
+                >
+                  {item.name}
+                </a>
+              )}
             </li>
           ))}
         </ul>
