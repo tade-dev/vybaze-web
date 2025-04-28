@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -15,9 +16,16 @@ const CallToAction = () => {
           <Button size="lg" className="bg-white text-pink-500 hover:bg-pink-100 px-8">
             Get Started Free
           </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-pink-400 px-8">
-            View Pricing
-          </Button>
+          <Link to="/pricing">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white/20 px-8 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+            >
+              <span className="relative z-10">View Pricing</span>
+              <span className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transform transition-all duration-300"></span>
+            </Button>
+          </Link>
         </div>
         <p className="mt-6 text-sm text-pink-100">
           No credit card required. Start with our free tier today.

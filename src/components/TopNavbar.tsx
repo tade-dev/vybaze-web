@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const navItems = [
-  { name: "Home", href: "/" },  // Change href to root path
+  { name: "Home", href: "/" },
+  { name: "Pricing", href: "/pricing" },
   { name: "FAQ", href: "#faq" },
 ];
 
@@ -38,7 +39,7 @@ const TopNavbar = () => {
         <ul className="hidden sm:flex space-x-8 text-gray-700 font-medium">
           {navItems.map((item, index) => (
             <li key={item.name} className={`transition-all duration-700`} style={{ transitionDelay: `${index * 100 + 200}ms`, opacity: isLoaded ? 1 : 0, transform: isLoaded ? 'translateY(0)' : 'translateY(-10px)' }}>
-              {item.name === "Home" ? (
+              {item.name === "Home" || item.name === "Pricing" ? (
                 <Link
                   to={item.href}
                   className="hover:text-pink-500 hover:underline focus:text-pink-600 focus:underline transition-colors duration-200 px-2 py-1 rounded"
