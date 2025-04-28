@@ -96,15 +96,40 @@ export default {
 				'fade-in': {
 					"0%": { opacity: "0", transform: "translateY(18px)" },
 					"100%": { opacity: "1", transform: "translateY(0)" }
+				},
+				'slide-in': {
+					"0%": { opacity: "0", transform: "translateY(20px)" },
+					"100%": { opacity: "1", transform: "translateY(0)" }
+				},
+				'slide-in-left': {
+					"0%": { opacity: "0", transform: "translateX(-20px)" },
+					"100%": { opacity: "1", transform: "translateX(0)" }
+				},
+				'slide-in-right': {
+					"0%": { opacity: "0", transform: "translateX(20px)" },
+					"100%": { opacity: "1", transform: "translateX(0)" }
+				},
+				'scale-up': {
+					"0%": { opacity: "0", transform: "scale(0.8)" },
+					"100%": { opacity: "1", transform: "scale(1)" }
+				},
+				'gradient': {
+					"0%": { backgroundPosition: "0% 50%" },
+					"50%": { backgroundPosition: "100% 50%" },
+					"100%": { backgroundPosition: "0% 50%" }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.7s cubic-bezier(.55,.09,.65,.95)'
+				'fade-in': 'fade-in 0.7s cubic-bezier(.55,.09,.65,.95)',
+				'slide-in': 'slide-in 0.7s cubic-bezier(.55,.09,.65,.95)',
+				'slide-in-left': 'slide-in-left 0.7s cubic-bezier(.55,.09,.65,.95)',
+				'slide-in-right': 'slide-in-right 0.7s cubic-bezier(.55,.09,.65,.95)',
+				'scale-up': 'scale-up 0.7s cubic-bezier(.55,.09,.65,.95)',
+				'gradient': 'gradient 8s ease infinite'
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
