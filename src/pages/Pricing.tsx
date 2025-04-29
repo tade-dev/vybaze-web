@@ -1,11 +1,9 @@
-
 import React from "react";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, CreditCard, Ticket } from "lucide-react";
 import TopNavbar from "@/components/TopNavbar";
 import Footer from "@/components/Footer";
-import MobileNavbar from "@/components/MobileNavbar";
 
 const PricingPage = () => {
   return (
@@ -143,7 +141,6 @@ const PricingPage = () => {
         </div>
       </div>
       <Footer />
-      <MobileNavbar />
     </div>
   );
 };
