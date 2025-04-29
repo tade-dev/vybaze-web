@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,7 @@ import Footer from "@/components/Footer";
 
 const PricingPage = () => {
   return (
-    <div className="min-h-screen bg-[#f7f6fa] flex flex-col items-center justify-start font-inter">
+    <div className="min-h-screen bg-[#f7f6fa] flex flex-col items-center justify-start font-satoshi">
       <TopNavbar />
       <div className="w-full max-w-4xl mx-auto px-4 pt-24 pb-24">
         <div className="text-center mb-16 animate-fade-in">
