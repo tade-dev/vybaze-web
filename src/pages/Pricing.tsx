@@ -2,7 +2,7 @@
 import React from "react";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Check, CreditCard, Ticket } from "lucide-react";
+import { Check, Zap, History, Layers, Rocket } from "lucide-react";
 import TopNavbar from "@/components/TopNavbar";
 import Footer from "@/components/Footer";
 
@@ -51,7 +51,7 @@ const PricingPage = () => {
             </CardContent>
             <CardFooter>
               <Button className="w-full bg-gray-800 hover:bg-gray-900">
-                Get Started Free
+                Try Free
               </Button>
             </CardFooter>
           </Card>
@@ -75,38 +75,45 @@ const PricingPage = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <Check size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
-                  <span><strong>Unlimited</strong> AI feedback sessions</span>
+                  <div>
+                    <span className="font-medium">Unlimited AI Feedback</span>
+                    <p className="text-sm text-gray-600 mt-0.5">Get detailed, instant AI analysis for as many tracks as you want — no monthly cap.</p>
+                  </div>
                 </li>
                 <li className="flex items-start">
-                  <Check size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Advanced analytics dashboard</span>
+                  <Zap size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-medium">Faster Feedback Processing</span>
+                    <p className="text-sm text-gray-600 mt-0.5">Priority queue for premium users — get results faster than free users.</p>
+                  </div>
                 </li>
                 <li className="flex items-start">
-                  <Check size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Priority processing</span>
+                  <History size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-medium">Full Feedback History</span>
+                    <p className="text-sm text-gray-600 mt-0.5">Access and compare all your past feedback, track your improvement over time.</p>
+                  </div>
                 </li>
                 <li className="flex items-start">
-                  <Check size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>1GB storage for your tracks</span>
+                  <Layers size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-medium">Advanced Insight Breakdown</span>
+                    <p className="text-sm text-gray-600 mt-0.5">Unlock deeper insights on vocals, mixing, arrangement, and emotional tone.</p>
+                  </div>
                 </li>
                 <li className="flex items-start">
-                  <Check size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Custom artist profile</span>
-                </li>
-                <li className="flex items-start">
-                  <Check size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>Direct fan monetization (0% commission)</span>
+                  <Rocket size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-medium">Early Access to New Features</span>
+                    <p className="text-sm text-gray-600 mt-0.5">Be the first to try upcoming tools and experimental AI models before public release.</p>
+                  </div>
                 </li>
               </ul>
             </CardContent>
             <CardFooter className="flex flex-col space-y-4">
-              <Button className="w-full bg-pink-500 hover:bg-pink-600" size="lg">
-                <CreditCard className="mr-2" size={18} />
-                Go Premium Monthly
-              </Button>
-              <Button className="w-full bg-gradient-to-r from-pink-500 to-pink-400 hover:from-pink-600 hover:to-pink-500" size="lg">
-                <Ticket className="mr-2" size={18} />
-                Go Premium Yearly
+              <p className="text-center text-sm text-gray-500">Coming soon! Premium subscription options will be available shortly.</p>
+              <Button className="w-full bg-pink-500 hover:bg-pink-600" size="lg" disabled>
+                Premium Coming Soon
               </Button>
             </CardFooter>
           </Card>
@@ -116,28 +123,40 @@ const PricingPage = () => {
           <h3 className="text-2xl font-bold mb-4">Why Go Premium?</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-lg mb-2">Unlimited AI Feedback</h4>
+              <h4 className="font-semibold text-lg mb-2 flex items-center">
+                <Check size={18} className="text-pink-500 mr-2 flex-shrink-0" />
+                Unlimited AI Feedback
+              </h4>
               <p className="text-gray-600">Get professional-quality feedback on as many tracks as you want. Our AI analyzes melody, harmony, rhythm, production and more.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-lg mb-2">Advanced Analytics</h4>
+              <h4 className="font-semibold text-lg mb-2 flex items-center">
+                <Layers size={18} className="text-pink-500 mr-2 flex-shrink-0" />
+                Advanced Analytics
+              </h4>
               <p className="text-gray-600">Track listener engagement, understand what works, and optimize your music with detailed performance metrics.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-lg mb-2">Priority Processing</h4>
+              <h4 className="font-semibold text-lg mb-2 flex items-center">
+                <Zap size={18} className="text-pink-500 mr-2 flex-shrink-0" />
+                Priority Processing
+              </h4>
               <p className="text-gray-600">Skip the queue and get your feedback instantly, even during peak times when our system is busy.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-lg mb-2">Direct Monetization</h4>
-              <p className="text-gray-600">Sell your music directly to fans with zero commission fees, keeping 100% of your earnings.</p>
+              <h4 className="font-semibold text-lg mb-2 flex items-center">
+                <Rocket size={18} className="text-pink-500 mr-2 flex-shrink-0" />
+                Early Access
+              </h4>
+              <p className="text-gray-600">Be the first to experience new AI models and features before they're released to the public.</p>
             </div>
           </div>
         </div>
 
         <div className="mt-12 text-center bg-gray-50 p-8 rounded-2xl border border-gray-100 animate-fade-in" style={{animationDelay: "0.8s"}}>
-          <h3 className="text-xl font-bold mb-3">30-Day Money Back Guarantee</h3>
+          <h3 className="text-xl font-bold mb-3">Coming Soon</h3>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Try Premium risk-free. If you're not completely satisfied within your first 30 days, we'll refund your payment in full.
+            Premium features will be available shortly. Subscribe to our newsletter to be the first to know when they launch!
           </p>
         </div>
       </div>
