@@ -28,8 +28,8 @@ const Hero = () => {
     }
   };
   
-  // Audio wave animation points
-  const wavePoints = Array.from({ length: 30 }, (_, i) => i);
+  // Audio visualization particles
+  const particles = Array.from({ length: 40 }, (_, i) => i);
 
   return (
     <section className="w-full py-12" ref={animationRef}>
@@ -44,19 +44,24 @@ const Hero = () => {
                style={{animationDuration: '8s'}}></div>
         </div>
 
-        {/* Audio wave visualization */}
-        <div className="absolute bottom-8 left-0 w-full flex justify-center space-x-1 opacity-50 h-24 overflow-hidden">
-          {wavePoints.map((point, index) => (
-            <div 
-              key={index}
-              className="w-1 md:w-2 bg-white rounded-full"
-              style={{
-                height: `${Math.sin(index * 0.5) * 50 + 50}%`,
-                animation: `scale-up 1.2s ease-in-out infinite alternate`,
-                animationDelay: `${index * 0.05}s`
-              }}
-            ></div>
-          ))}
+        {/* Music particles visualization */}
+        <div className="absolute bottom-0 left-0 w-full h-40 overflow-hidden opacity-40">
+          <div className="relative w-full h-full">
+            {particles.map((particle, index) => (
+              <div 
+                key={index}
+                className="absolute rounded-full bg-white"
+                style={{
+                  width: `${Math.random() * 6 + 2}px`,
+                  height: `${Math.random() * 6 + 2}px`,
+                  left: `${Math.random() * 100}%`,
+                  bottom: '0',
+                  opacity: Math.random() * 0.6 + 0.4,
+                  animation: `float-up ${Math.random() * 4 + 3}s ease-in-out infinite ${Math.random() * 2}s`
+                }}
+              ></div>
+            ))}
+          </div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
@@ -96,7 +101,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-gray-500 text-gray-100 hover:text-white hover:border-white gap-2 h-auto py-6 rounded-xl transition-all duration-300 hover:scale-105 transform backdrop-blur-sm"
+              className="border-white text-white hover:bg-white/10 hover:text-white gap-2 h-auto py-6 rounded-xl transition-all duration-300 hover:scale-105 transform backdrop-blur-sm"
               onClick={scrollToHowItWorks}
             >
               Learn More
@@ -122,21 +127,22 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Equalizer animation */}
+          {/* Musical notes and symbols animation */}
           <div className={`mt-16 mb-6 flex justify-center gap-2 transition-all duration-1000 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
                style={{transitionDelay: '1000ms'}}>
             <Music size={24} className="text-pink-400" />
-            <div className="flex items-end space-x-1 h-6">
-              {[0.4, 0.7, 1, 0.6, 0.3, 0.5, 0.8, 0.5, 0.3, 0.7, 0.9, 0.5].map((height, i) => (
+            <div className="flex items-center space-x-3 h-6">
+              {['♪', '♫', '♬', '♩', '♪', '♫'].map((note, i) => (
                 <div 
                   key={i} 
-                  className="w-1 bg-gradient-to-t from-pink-500 to-purple-500 rounded-full" 
+                  className="text-lg md:text-xl text-gradient-to-r from-pink-400 to-purple-400" 
                   style={{
-                    height: `${height * 100}%`,
-                    animation: 'equalizer 1s ease-in-out infinite alternate',
-                    animationDelay: `${i * 0.1}s`
+                    animation: 'music-bounce 2s ease-in-out infinite alternate',
+                    animationDelay: `${i * 0.2}s`
                   }}
-                ></div>
+                >
+                  {note}
+                </div>
               ))}
             </div>
           </div>
@@ -145,9 +151,15 @@ const Hero = () => {
 
       <style>
         {`
-          @keyframes equalizer {
-            0% { transform: scaleY(0.3); }
-            100% { transform: scaleY(1); }
+          @keyframes float-up {
+            0% { transform: translateY(0); opacity: 0.4; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-100px); opacity: 0; }
+          }
+          
+          @keyframes music-bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
           }
         `}
       </style>
