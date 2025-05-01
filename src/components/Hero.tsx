@@ -143,13 +143,14 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Custom animation keyframes */}
-      <style jsx>{`
-        @keyframes equalizer {
-          0% { transform: scaleY(0.3); }
-          100% { transform: scaleY(1); }
-        }
-      `}</style>
+      <style>
+        {`
+          @keyframes equalizer {
+            0% { transform: scaleY(0.3); }
+            100% { transform: scaleY(1); }
+          }
+        `}
+      </style>
     </section>
   );
 };
