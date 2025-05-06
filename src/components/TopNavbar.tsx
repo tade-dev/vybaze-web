@@ -30,11 +30,16 @@ const TopNavbar = () => {
     <header className={`w-full bg-white border-b border-gray-200 fixed top-0 z-40 transition-transform duration-500 ${isLoaded ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/49d79be3-bd1c-4b37-9eb8-e8321cd3f431.png" 
-            alt="Vybaze Logo" 
-            className="h-8 w-auto"
-          />
+          <Link to="/">
+            <img 
+              src="/lovable-uploads/fbab5318-34d1-472d-8b7c-8335dd508977.png" 
+              alt="Vybaze Logo" 
+              className="h-8 w-auto"
+              style={{ maxHeight: '32px' }}
+              width="512"
+              height="512"
+            />
+          </Link>
         </div>
         <ul className="hidden sm:flex space-x-8 text-gray-700 font-medium">
           {navItems.map((item, index) => (
