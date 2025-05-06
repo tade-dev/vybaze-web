@@ -32,7 +32,7 @@ const TopNavbar = () => {
         <div className="flex items-center">
           <Link to="/">
             <img 
-              src="/lovable-uploads/a3d34f09-eebd-4dff-a091-48f9fb1942b6.png" 
+              src="/lovable-uploads/aa205ab4-e2b2-4171-bc51-c4cf10abff27.png" 
               alt="Vybaze Logo" 
               className="h-8 w-auto"
               style={{ maxHeight: '32px' }}
