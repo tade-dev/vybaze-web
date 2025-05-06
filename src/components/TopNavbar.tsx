@@ -36,8 +36,8 @@ const TopNavbar = () => {
               alt="Vybaze Logo" 
               className="h-8 w-auto"
               style={{ maxHeight: '32px' }}
-              width="512"
-              height="512"
+              width="1024"
+              height="1024"
             />
           </Link>
         </div>
