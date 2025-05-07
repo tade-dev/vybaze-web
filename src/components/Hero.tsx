@@ -65,12 +65,15 @@ const Hero = () => {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
+          {/* Commented out App Store rating section */}
+          {/*
           <div className={`transition-all duration-700 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="inline-flex items-center gap-1 bg-white/10 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-sm mb-6">
               <Star size={14} className="text-yellow-400 fill-yellow-400" />
               <span>Rated 4.9 on the App Store</span>
             </div>
           </div>
+          */}
           
           <h1 className={`text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight transition-all duration-1000 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
               style={{transitionDelay: '200ms'}}>
@@ -109,6 +112,8 @@ const Hero = () => {
             </Button>
           </div>
           
+          {/* Commented out the 5K+ users section */}
+          {/*
           <div className={`mt-10 flex items-center justify-center gap-4 transition-all duration-1000 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
                style={{transitionDelay: '800ms'}}>
             <div className="flex -space-x-3">
@@ -126,6 +131,7 @@ const Hero = () => {
               <span className="font-semibold">5K+</span> musicians already using Vybaze
             </p>
           </div>
+          */}
 
           {/* Musical notes and symbols animation */}
           <div className={`mt-16 mb-6 flex justify-center gap-2 transition-all duration-1000 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
