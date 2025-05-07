@@ -1,7 +1,15 @@
+
 import { MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="w-full py-12 bg-gray-100">
       <div className="max-w-4xl mx-auto px-4">
@@ -13,7 +21,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center mt-6 text-gray-500 hover:text-pink-500">
               <MessageSquare size={18} className="mr-2" />
-              <a href="#" className="text-sm">support@vybaze.com</a>
+              <a href="mailto:support@vybaze.xyz" className="text-sm">support@vybaze.xyz</a>
             </div>
           </div>
           
@@ -21,7 +29,7 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4 text-gray-900">Product</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Features</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('how-it-works'); }} className="text-gray-600 hover:text-pink-500 text-sm">Features</a></li>
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Testimonials</a></li>
               </ul>
             </div>
@@ -30,9 +38,9 @@ const Footer = () => {
               <h4 className="font-semibold mb-4 text-gray-900">Resources</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Blog</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Guides</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('how-it-works'); }} className="text-gray-600 hover:text-pink-500 text-sm">Guides</a></li>
                 <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Community</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 text-sm">Support</a></li>
+                <li><a href="mailto:support@vybaze.xyz" className="text-gray-600 hover:text-pink-500 text-sm">Support</a></li>
               </ul>
             </div>
             
