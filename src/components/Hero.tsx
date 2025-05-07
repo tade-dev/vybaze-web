@@ -101,7 +101,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-pink-400 text-white hover:bg-white/10 hover:text-white gap-2 h-auto py-6 rounded-xl transition-all duration-300 hover:scale-105 transform backdrop-blur-sm"
+              className="border-white text-white bg-transparent h-auto py-6 rounded-xl transition-all duration-300 transform backdrop-blur-sm"
               onClick={scrollToHowItWorks}
             >
               Learn More
