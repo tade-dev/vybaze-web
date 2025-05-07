@@ -20,10 +20,9 @@ const CallToAction = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white/20 px-8 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+              className="border-white text-white bg-transparent px-8 transition-all relative overflow-hidden group"
             >
               <span className="relative z-10">View Pricing</span>
-              <span className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transform transition-all duration-300"></span>
             </Button>
           </Link>
         </div>
