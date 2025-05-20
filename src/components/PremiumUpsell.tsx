@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Check, Zap, History, Layers, Rocket } from "lucide-react";
+import { Check, Zap, History, Mic, Rocket } from "lucide-react";
 
 const features = [
   {
@@ -16,8 +16,8 @@ const features = [
     icon: History
   },
   {
-    text: "Advanced insight breakdown",
-    icon: Layers
+    text: "Voice-Note Feedback",
+    icon: Mic
   },
   {
     text: "Early access to new features",
@@ -46,7 +46,7 @@ const PremiumUpsell = () => (
     
     <div className="flex items-center justify-between w-full mt-2">
       <div>
-        <span className="text-3xl font-bold text-gray-900">$7.99</span>
+        <span className="text-3xl font-bold text-gray-900">$4.99</span>
         <span className="text-gray-500 ml-1">/month</span>
       </div>
       <Button className="bg-gray-300 hover:bg-gray-400 cursor-not-allowed" disabled>

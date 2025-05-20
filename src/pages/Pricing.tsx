@@ -2,7 +2,7 @@
 import React from "react";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Check, Zap, History, Layers, Rocket } from "lucide-react";
+import { Check, Zap, History, Mic, Rocket } from "lucide-react";
 import TopNavbar from "@/components/TopNavbar";
 import Footer from "@/components/Footer";
 
@@ -66,10 +66,11 @@ const PricingPage = () => {
             <CardContent>
               <div className="mb-6">
                 <div className="flex items-center">
-                  <div className="text-3xl font-bold">$7.99</div>
+                  <div className="text-3xl font-bold">$4.99</div>
                   <span className="text-gray-500 ml-2">/ month</span>
                 </div>
-                <div className="text-sm text-gray-500 mt-1">or $69.99 / year (save 27%)</div>
+                <div className="text-sm text-gray-500 mt-1">or $49.99 / year (save 17%)</div>
+                <div className="text-sm text-pink-500 font-medium mt-1">7-day free trial</div>
               </div>
               
               <ul className="space-y-3">
@@ -95,10 +96,10 @@ const PricingPage = () => {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <Layers size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
+                  <Mic size={18} className="text-pink-500 mr-2 mt-1 flex-shrink-0" />
                   <div>
-                    <span className="font-medium">Advanced Insight Breakdown</span>
-                    <p className="text-sm text-gray-600 mt-0.5">Unlock deeper insights on vocals, mixing, arrangement, and emotional tone.</p>
+                    <span className="font-medium">Voice-Note Feedback</span>
+                    <p className="text-sm text-gray-600 mt-0.5">Record or upload a vocal demo for instant AI lyric & performance coaching.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -131,10 +132,10 @@ const PricingPage = () => {
             </div>
             <div>
               <h4 className="font-semibold text-lg mb-2 flex items-center">
-                <Layers size={18} className="text-pink-500 mr-2 flex-shrink-0" />
-                Advanced Analytics
+                <Mic size={18} className="text-pink-500 mr-2 flex-shrink-0" />
+                Voice-Note Feedback
               </h4>
-              <p className="text-gray-600">Track listener engagement, understand what works, and optimize your music with detailed performance metrics.</p>
+              <p className="text-gray-600">Record or upload vocal demos and get instant AI coaching on your lyrics, delivery, and overall performance.</p>
             </div>
             <div>
               <h4 className="font-semibold text-lg mb-2 flex items-center">
