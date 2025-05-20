@@ -2,7 +2,7 @@
 import { Upload, FileMusic, Headphones, DollarSign, Users } from "lucide-react";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
-const mockupSrc = "/lovable-uploads/2a900c8b-500b-47ac-8ab8-e5cb16a4fb2b.png";
+const mockupSrc = "/lovable-uploads/4391b038-18c0-4bbc-98b7-5dae484d12f6.png";
 
 const steps = [
   {
@@ -91,7 +91,7 @@ const HowItWorks = () => {
             })}
           </div>
           
-          {/* Mockup in the middle on desktop, centered on mobile */}
+          {/* Feedback results image in the middle */}
           <div 
             ref={mockupAnimation.ref}
             className={`flex-shrink-0 transition-all duration-1000 ${
@@ -100,11 +100,11 @@ const HowItWorks = () => {
                 : "opacity-0 scale-90"
             }`}
           >
-            <div className="relative w-[220px] h-[470px] mx-auto drop-shadow-xl rounded-2xl border border-gray-100 bg-gray-100 overflow-hidden hover:scale-105 transition-transform duration-300">
+            <div className="relative w-[300px] h-auto mx-auto drop-shadow-xl rounded-2xl border border-gray-100 bg-gray-100 overflow-hidden hover:scale-105 transition-transform duration-300">
               <img
                 src={mockupSrc}
-                alt="Vybaze mobile app mockup"
-                className="object-cover w-full h-full"
+                alt="Vybaze AI music feedback example"
+                className="object-contain w-full h-full"
                 draggable={false}
               />
               {/* Optional shadow */}
@@ -146,7 +146,7 @@ const HowItWorks = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-xs text-gray-400">
-          *App interface shown is a demo. Real product may look different.
+          *AI feedback example shown. Results will vary based on your track.
         </div>
       </div>
     </section>
