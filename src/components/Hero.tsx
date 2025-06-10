@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download, ArrowRight, Play, Mic, Sparkles, Music, Waveform } from "lucide-react";
+import { Download, ArrowRight, Play, Mic, Sparkles, Music, AudioWaveform } from "lucide-react";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 import { useState, useEffect } from "react";
 
@@ -113,7 +113,7 @@ const Hero = () => {
               </span>
               <div className="absolute -top-6 -right-12 flex items-center gap-2">
                 <Mic size={28} className="text-pink-400 animate-pulse" />
-                <Waveform size={24} className="text-purple-400 animate-bounce" style={{animationDelay: '0.5s'}} />
+                <AudioWaveform size={24} className="text-purple-400 animate-bounce" style={{animationDelay: '0.5s'}} />
               </div>
             </span>
           </h1>
@@ -156,7 +156,7 @@ const Hero = () => {
                style={{transitionDelay: '900ms'}}>
             {[
               { icon: Mic, text: "AI Vocal Coaching" },
-              { icon: Waveform, text: "Smart Audio Analysis" },
+              { icon: AudioWaveform, text: "Smart Audio Analysis" },
               { icon: Music, text: "Instant Feedback" }
             ].map((feature, index) => {
               const Icon = feature.icon;
